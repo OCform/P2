@@ -70,30 +70,36 @@ header img {
 }
 
 #header-navigation {  
-  line-height: 150px;
+ line-height: 100px;
 }
 
 #header-navigation ul { 
   margin: 0; 
   width: 400px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 #header-navigation li {
-  width: 180px;
-  height: 180px;
+  width: 50%;
   text-align: center;
-  border-top: 1px solid transparent;
 }
 
-#header-navigation li a {  
-  padding: 64px;
+#header-navigation a {  
+  border: 2px solid transparent;
 }
 
-#header-navigation li a:hover { 
-  border-top: 5px solid var(--blue);
+#header-navigation .nav-hebergements {
+  padding: 39px 32px;
+}
+
+#header-navigation .nav-activites {
+  padding: 39px 56px;
+}
+
+#header-navigation li a:hover {   
+  border-top: 2px solid var(--blue);
 }
 
 #header-navigation li a:hover {  
@@ -181,7 +187,10 @@ input::placeholder {
   margin: 0 20px 0 0;
 }
 
-.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {  
+.fa-money-bill-wave, 
+.fa-child, 
+.fa-heart, 
+.fa-dog {  
   padding-top: 12px;
   padding-right: 14px;
   padding-left: 10px;
