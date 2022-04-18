@@ -295,7 +295,7 @@ h2 {
 }
 
 h3 {
-  border: 2px solid transparent;
+  border: 2px solid red;
 }
 
 #activites {
@@ -306,3 +306,15 @@ h3 {
   border: 2px solid royalblue;
 }
 
+div.under-card {  
+  border: 2px solid darkblue;
+}
+
+div.under-card p {  
+  border: 2px solid orchid;
+}
+
+
+div.under-card a {  
+  border: 2px solid orangered;
+}
