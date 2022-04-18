@@ -268,10 +268,13 @@ margin: 0;
 
 #hebergements {
   border: 2px solid red;
+  display: flex;
+  flex-direction: column;
 }
 
 #hebergement-cards {
   border: 2px solid green;
+  display: flex;
 }
 
 #cards {
@@ -304,6 +307,10 @@ h3 {
 
 #popular-cards {
   border: 2px solid royalblue;
+  display: flex;
+  justify-content: ;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 div.under-card {  
@@ -317,4 +324,8 @@ div.under-card p {
 
 div.under-card a {  
   border: 2px solid orangered;
+}
+
+#popular-cards.title {
+  display: flex;
 }
