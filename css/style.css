@@ -1,4 +1,9 @@
-
+*, *:before, *:after {
+  -moz-box-sizing    : border-box; /* Firefox */
+  -webkit-box-sizing : border-box; /* Safari */
+  box-sizing         : border-box;
+  *behavior          : url(./js/boxsizing.htc); /* ie7 et ie8 */
+}
 
 /* Couleurs de la charte */ 
 :root {
@@ -30,12 +35,6 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
 }
-
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;   
-}  
 
 main {
   margin: var(--margin-page);
@@ -132,9 +131,9 @@ form {
 }
 
 i.fa-map-marker-alt {
-  width: 42px;
-  height: 40px;
-  padding: 11px;
+  width: 52px;
+  height: 50px;
+  padding: 16px;
   text-align: center;
   /*font-size: 30px;*/
   background-color: var(--grey);
@@ -154,7 +153,6 @@ input.p-holder {
 
 input.search {
   color: #FFF;
-  /*font-size: 30px;*/
   padding-left: 10px;
   padding-right: 10px;
   background-color: var(--blue);
@@ -166,7 +164,6 @@ input.search {
 
 
 input::placeholder {
-  /*font-size: 30px;*/
   color: #000;
   font-weight: bolder;
 }
@@ -190,15 +187,17 @@ input::placeholder {
 .fa-money-bill-wave, 
 .fa-child, 
 .fa-heart, 
-.fa-dog {  
+.fa-dog {
+  text-align: center; 
+  width: 40px; 
+  height: 40px;
   padding-top: 12px;
   padding-right: 14px;
   padding-left: 10px;
-  width: 44px;
-  height: 44px;
-  text-align: center; 
-  border: 10px solid red;
+  background: white;
+  border: 1px solid var(--light-blue);
   border-radius: 50%;
+  color: var(--blue);
 }
 
 #filters h3 {
@@ -235,9 +234,9 @@ margin: 0;
 /* information */
 .fa-info {
   text-align: center; 
-  width: 40px; 
-  height: 40px;
-  padding: 10px;
+  width: 20px; 
+  height: 20px;
+  margin-top: 14px;
   background: white;
   border: 1px solid var(--light-blue);
   border-radius: 50%;
@@ -253,3 +252,10 @@ margin: 0;
   padding-left: 10px;
 }
 /*XXXX information XXXX*/
+
+/* o:) main content (:o */
+
+#main-content {
+  background-color: var(--grey);
+}
+
