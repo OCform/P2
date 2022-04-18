@@ -180,6 +180,11 @@ input::placeholder {
 }
 
 #filters h2 {
+  font-size: 18px;
+  margin: 0 20px 0 0;
+}
+
+#filters h3 {
   font-size: 16px;
   margin: 0 20px 0 0;
 }
@@ -219,15 +224,17 @@ border: 1px solid var(--grey);
 margin: 0;
 }
 
-#filters button  {  
+#filters button  { 
   background: #FFF;    
   border-radius: 50px 50px 50px 50px;
   border: 2px solid var(--light-blue);    
   padding-top: 0px;
   padding-left: 0px;
-  padding-bottom: 0;
+  padding-bottom: 0px;
+  padding-right: 0px;
   margin: 10px;
   display: flex;
+  align-items: center;
 }
 /*XXXX fiiiiilters XXXX*/
 
@@ -256,6 +263,46 @@ margin: 0;
 /* o:) main content (:o */
 
 #main-content {
-  background-color: var(--grey);
+  border: 2px solid rebeccapurple;
+}
+
+#hebergements {
+  border: 2px solid red;
+}
+
+#hebergement-cards {
+  border: 2px solid green;
+}
+
+#cards {
+  border: 2px solid greenyellow;
+}
+
+.card {
+  border: 2px solid yellow;
+}
+
+#main-content img {
+  border: 2px solid blue;
+}
+
+h1 {
+  border: 2px solid darkblue;
+}
+
+h2 {
+  border: 2px solid darkturquoise;
+}
+
+h3 {
+  border: 2px solid transparent;
+}
+
+#activites {
+  border: 2px solid darkorange;
+}
+
+#popular-cards {
+  border: 2px solid royalblue;
 }
 
