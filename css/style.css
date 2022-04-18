@@ -182,9 +182,11 @@ input::placeholder {
 }
 
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {  
-  padding: 12px;
-  width: 40px;
-  height: 40px;
+  padding-top: 12px;
+  padding-right: 14px;
+  padding-left: 10px;
+  width: 44px;
+  height: 44px;
   text-align: center; 
   border: 10px solid red;
   border-radius: 50%;
@@ -209,11 +211,10 @@ border: 1px solid var(--grey);
 margin: 0;
 }
 
-button  {  
+#filters button  {  
   background: #FFF;    
   border-radius: 50px 50px 50px 50px;
   border: 2px solid var(--light-blue);    
-  
   padding-top: 0px;
   padding-left: 0px;
   padding-bottom: 0;
