@@ -175,7 +175,7 @@ input::placeholder {
 
 #filters h2 {
   font-size: 18px;
-  margin: 0 20px 0 0;
+  margin: 0 10px 0 0;
 }
 
 #filters h3 {
@@ -204,7 +204,7 @@ input::placeholder {
   align-items: center;
   gap: 10px;
   font-weight: bolder;
-  margin: 0 50px 0 30px;
+  margin: 0 20px 0 10px;
 }
 
 #filters button:hover {
@@ -253,7 +253,6 @@ margin: 0;
   padding-left: 10px;
 }
 /*XXXX information XXXX*/
-
 /* o:) main content (:o */
 
 
@@ -268,7 +267,8 @@ footer {
 #footer-navigation {
   margin: var(--margin-page);  
   display: flex;
-  gap: 800px;
+  flex-wrap: nowrap;
+  gap: 100px;
 }
 
 #footer-navigation ul {
