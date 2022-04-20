@@ -33,7 +33,13 @@ body {
   margin: 0;
   padding: 0;  
   font-family: 'Raleway', sans-serif;
-  font-size: 16px;
+  font-size: 12px;
+}
+
+.content {
+  max-width: 1440px;
+  min-width: 320px;
+  margin: auto;
 }
 
 main {
@@ -59,7 +65,7 @@ header {
 }
 
 header img {
-  width: 100px;
+  width: 30%;
 }
 
 #header-navigation {  
@@ -68,7 +74,7 @@ header img {
 
 #header-navigation ul { 
   margin: 0; 
-  width: 400px;
+  width: 300px;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -84,11 +90,11 @@ header img {
 }
 
 #header-navigation .nav-hebergements {
-  padding: 39px 32px;
+  padding: 41px 21px;
 }
 
 #header-navigation .nav-activites {
-  padding: 39px 56px;
+  padding: 41px 40px;
 }
 
 #header-navigation li a:hover {   
@@ -104,7 +110,7 @@ header img {
 /* title */
 h1 {
   margin: 0;
-  /*font-size: 20px;*/
+  font-size: 18px;
 }
 
 #title {
@@ -125,9 +131,9 @@ form {
 }
 
 i.fa-map-marker-alt {
-  width: 52px;
-  height: 50px;
-  padding: 16px;
+  width: 42px;
+  height: 40px;
+  padding: 14px;
   text-align: center;
   /*font-size: 30px;*/
   background-color: var(--grey);
@@ -137,7 +143,7 @@ i.fa-map-marker-alt {
 }
 
 input.p-holder {
-  width: 250px;
+  width: 180px;
   padding-left: 10px;
   border-left: 1px solid var(--grey);
   border-right: 1px solid var(--blue);
@@ -235,9 +241,10 @@ margin: 0;
 /* information */
 .fa-info {
   text-align: center; 
-  width: 20px; 
-  height: 20px;
-  margin-top: 14px;
+  width: 22px; 
+  height: 22px;
+  margin-top: 6px;
+  padding-top: 4px;
   background: white;
   border: 1px solid var(--light-blue);
   border-radius: 50%;
@@ -254,7 +261,86 @@ margin: 0;
 }
 /*XXXX information XXXX*/
 /* o:) main content (:o */
+/* o:) main content (:o */
+.header {
+  text-align: left;
+  padding-left: 5px;
+}
 
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create 2 columns that sits next to each other */
+.column-hebergement {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+  max-width: 75%;
+  padding: 0 4px;
+}
+
+.column-populaire {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column-hebergement img, .column-populaire img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Create three equal columns that sits next to each other */
+.column-card {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column-card img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 992px) {
+  .column-hebergement {
+    -ms-flex: 75%;
+    flex: 75%;
+    max-width: 75%;
+  }  
+  .column-populaire {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+  }
+  .column-card {
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 33%;
+  }
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+  .column-hebergement, 
+  .column-populaire, 
+  .column-card {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/*XXXX main content XXXX*/
+/*XXXX main content XXXX*/
 
 /* footer */
 footer {  
@@ -268,7 +354,7 @@ footer {
   margin: var(--margin-page);  
   display: flex;
   flex-wrap: nowrap;
-  gap: 100px;
+  gap: 200px;
 }
 
 #footer-navigation ul {
@@ -280,3 +366,4 @@ footer {
   justify-content: flex-start;
   margin: 10px 0;
 }
+/*XXXX footer XXXX*/
