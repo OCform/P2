@@ -1,0 +1,21 @@
+<!-- card hebergement -->
+<article class="card">
+  <picture>
+    <source media="(min-width:1440px)" srcset="./images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"> 
+    <source media="(min-width:992px) " srcset="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+    <source media="(min-width:768px)" srcset="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+    <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo de l'auberge La Cannebière"  style="width:100%" />
+  </picture>    
+  <div class="container">
+    <h3>Auberge La Cannebière</h3>
+    <p>Nuit à partir de <span class="price">25</span><span class="currency">€</span></p>
+    <div class="note" aria-label="Note : 4 sur 5" role="img" href="#">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star grey"></i>
+    </div>
+  </div>    
+</article>
+<!--XXXX card hebergement XXXX-->

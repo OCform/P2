@@ -275,7 +275,7 @@ margin: 0;
   padding: 0 4px;
 }
 
-.section-hebergement wrapper-section-hebergement {
+.section-hebergement .wrapper-section-hebergement {
   background-color: var(--grey);
   margin-top: 8px;
   vertical-align: middle;
@@ -284,7 +284,7 @@ margin: 0;
   object-fit: cover;  
 }
 
-.aside-hebergement wrapper-aside-hebergement {
+.aside-hebergement .wrapper-aside-hebergement {
   background-color: var(--grey);
   margin-top: 8px;
   vertical-align: middle;
@@ -293,28 +293,46 @@ margin: 0;
   object-fit: cover;
 }
 
-/* Responsive layout */
-@media screen and (max-width: 768px) {
-  .section-hebergement {
-    -ms-flex: 70%;
-    flex: 70%;
-    max-width: 70%;
-  }  
-  .aside-hebergement {
-    -ms-flex: 30%;
-    flex: 30%;
-    max-width: 30%;
-  }
+
+
+/* hebergement */
+
+.header {
+  text-align: center;
+  padding: 32px;
 }
 
-/* Responsive layout */
-@media screen and (max-width: 425px) {
-  .section-hebergement, .aside-hebergement {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
+.row-section-hebergement {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
+
+/* Create four equal columns that sits next to each other */
+.column-section-hebergement {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column-section-hebergement .card {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 246px;
+  height: 199px;
+}
+
+.column-section-hebergement .card img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
 /*XXXX main content XXXX*/
 
 /* footer */
@@ -341,4 +359,43 @@ footer {
   justify-content: flex-start;
   margin: 10px 0;
 }
-/*XXXX footer XXXX*/
+/*XXXX footer XXXX*//* Responsive layout */
+@media screen and (max-width: 800px) {
+  .section-hebergement {
+    -ms-flex: 60%;
+    flex: 60%;
+    max-width: 60%;
+  }  
+  .aside-hebergement {
+    -ms-flex: 40%;
+    flex: 40%;
+    max-width: 40%;
+  }
+}
+
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+  .section-hebergement, .aside-hebergement {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 30%;
+    flex: 30%;
+    max-width: 30%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
