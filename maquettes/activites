@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-1 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  
+  padding: 0 4px;
+}
+
+.column-2 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  /* max-height: 50%; */
+  padding: 0 4px;
+}
+
+.column-1 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 25%;
+  height: 100%;
+  object-fit: cover;
+}
+.column-2 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 25%;
+  height: 50%;
+  object-fit: cover;
+}
+
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 992px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column-1">
+    <img src="/w3images/wedding.jpg" style="width:100%">    
+  </div>
+  <div class="column-2">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+    <img src="/w3images/ocean.jpg" style="width:100%">
+  </div>  
+  <div class="column-1">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+  </div>
+  <div class="column-2">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+    <img src="/w3images/ocean.jpg" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
