@@ -1,0 +1,11 @@
+
+
+<!-- For Microsoft Edge Flexbox implementation details, see https://msdn.microsoft.com/en-us/library/bg124109 -->
+<header>header</header>
+<section id="flexContainer">
+  <nav>navigation</nav>
+  <section id="content">section</section>
+  <aside>aside</aside>
+</section>
+<footer>footer</footer>
+
